@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collapse JQuery</title>
+
+ <!-- JQuery連結 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- css連結 -->
+<link rel="stylesheet" href="collapse.css">
+</head>
+
+<body>
+<h2>C w C Channel問與答</h2>
+<div id="q1">請問JQuery和JavaScript的差異？</div>
+<div id="a1">JQuery 是JavaScript的函式庫(Library)，透過簡單的預設函式就可以簡化(Simplify)執行複雜JavaScript的內容，詳細可看這個影片：<a href="https://youtu.be/zYrED1KokgE" target="_blank">影片連結</a> </div>
+<br>
+<br>
+<div id="q2">我有個簡單的網頁想發佈，有沒有免費的網頁發佈服務? </div>
+<div id="a2">目前有許多的免費網頁發佈服務，雖然許多限制（空間／網域），但如果只是簡單的靜態網頁，完全沒問題，詳細可看這個影片：<a href="https://youtu.be/05MbBWB6Gbc" target="_blank">影片連結</a> </div>
+<br>
+<br>
+<div id="q3">Bootstrap是什麼碗糕？</div>
+<div id="a3">Bootstrap是一種以手機友善為導向的CSS以及JQuery函式庫，讓設計師輕易的設計出美觀的網站，詳細可看這個影片：<a href="https://youtu.be/mjfkPAkgPKs" target="_blank">影片連結</a></div>
+<br>
+<br>
+<script>
+    // collapse展開效果JQUERY
+    $(document).ready(function(){
+         $("#q1").click(function(){
+             $("#a1").slideToggle(1000);
+         });
+         $("#q2").click(function(){
+             $("#a2").slideToggle(1000);
+         });
+         $("#q3").click(function(){
+             $("#a3").slideToggle(1000);
+         });
+    })
+
+</script>
+
+
+
+</body>
+
+</html>
